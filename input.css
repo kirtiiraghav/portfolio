@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.boxshadow {
+    box-shadow: 0 0 5px white,
+    0 0 5px white,
+    0 0 5px white,
+    0 0 5px ;
+}
+
+.link:hover {
+    @apply boxshadow rounded
+}
