@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="matter.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+    <title>Kirti Raghav | Front-End Developer</title>
+</head>
+
+<body class="bg-[#111] text-white">
+    <section class="px-3 h-screen flex justify-center items-center flex-col relative max-w-screen-2xl mx-auto">
+        <div class=" z-10 absolute top-2 right-3 cursor-pointer text-xl sm:text-2xl animate-spinEvery10Sec"><i
+                class="fa-solid fa-sun"></i>
+        </div>
+        <ul
+            class=" z-10 text-inherit flex items-center justify-center gap-4 sm:gap-8 absolute top-2 left-3 text-xl sm:text-2xl cursor-pointer sm:flex-col sm:top-[50%] sm:-translate-y-[50%] ">
+            <li class="hover:scale-125 duration-200 ease-in-out delay-75"><a target="_blank" href=""><i
+                        class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="hover:scale-125 duration-200 ease-in-out delay-75"><a target="_blank"
+                    href="https://github.com/kirtiiraghav"><i class="fa-brands fa-github"></i></a></li>
+            <li class="hover:scale-125 duration-200 ease-in-out delay-75"><a target="_blank"
+                    href="mailto:kirtiraghav456@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </li>
+        </ul>
+        <div class="z-10 pointer-events-none flex flex-col items-center">
+            <p class="font-montserrat text-base sm:text-xl font-extralight">Hello, I'm</p>
+            <p class="font-bebas text-[80px] leading-none sm:text-9xl font">KIRTI RAGHAV</p>
+            <p class="font-montserrat text-base sm:text-2xl font-extralight sm:font-thin ">A FRONTEND WEB DEVELOPER
+            </p>
+        </div>
+        <div class="z-10 flex justify-center">
+            <button
+                class="link font-montserrat mt-2 px-2 py-1 font-light hover:scale-110 ease-in-out duration-100 delay-75 ">About
+                ME
+            </button>
+        </div>
+        <a class="py-1 px-2 z-10 cursor-pointer absolute bottom-20 font-extralight flex gap-2 hover:scale-125 duration-200 ease-in-out delay-75"
+            href="#latest-work">
+            <button class="font-montserrat text-sm sm:text-lg  hover:font-light">Latest Work</button>
+            <div class="">
+                <i class="fa-solid fa-arrow-down-long"></i>
+            </div>
+        </a>
+        <!-- matter.js -->
+        <div class="absolute hidden sm:block " id="wrapper-canvas"></div>
+    </section>
+    <section id="latest-work" class=""></section>
+</body>
+
+</html>
