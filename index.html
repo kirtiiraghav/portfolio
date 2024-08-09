@@ -5,24 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet" />
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <script src="matter.js" defer></script>
 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- matter js -->
+    <script src="matter.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+
     <title>Kirti Raghav | Front-End Developer</title>
 </head>
 
-<body class="bg-[#111] text-white">
-    <section class="px-3 h-screen flex justify-center items-center flex-col relative max-w-screen-2xl mx-auto">
+<body class=" bg-[#111] text-white">
+    <section class=" px-3 h-screen flex justify-center items-center flex-col relative max-w-screen-2xl mx-auto">
         <div class=" z-10 absolute top-2 right-3 cursor-pointer text-xl sm:text-2xl animate-spinEvery10Sec"><i
                 class="fa-solid fa-sun"></i>
         </div>
@@ -43,12 +51,14 @@
             </p>
         </div>
         <div class="z-10 flex justify-center">
-            <button
-                class="link font-montserrat mt-2 px-2 py-1 font-light hover:scale-110 ease-in-out duration-100 delay-75 ">About
-                ME
-            </button>
+            <a href="#about-me">
+                <button
+                    class="link font-montserrat mt-2 px-2 py-1 font-light hover:scale-110 ease-in-out duration-100 delay-75 ">About
+                    ME
+                </button>
+            </a>
         </div>
-        <a class="py-1 px-2 z-10 cursor-pointer absolute bottom-20 font-extralight flex gap-2 hover:scale-125 duration-200 ease-in-out delay-75"
+        <a class="py-1 px-2 z-10 cursor-pointer mt-2 relative -bottom-[30px] font-extralight flex gap-2 hover:scale-125 duration-200 ease-in-out delay-75"
             href="#latest-work">
             <button class="font-montserrat text-sm sm:text-lg  hover:font-light">Latest Work</button>
             <div class="">
@@ -58,7 +68,44 @@
         <!-- matter.js -->
         <div class="absolute hidden sm:block " id="wrapper-canvas"></div>
     </section>
-    <section id="latest-work" class=""></section>
+    <section id="about-me" class="max-w-screen-2xl mx-auto h-screen flex items-center sm:text-lg font-montserrat px-3">
+        <div class="boxshadow-about sm:w-[80%] mx-auto rounded overflow-hidden border-[1px] border-solid border-[#DDDDDF]">
+            <div class="flex gap-2 items-center h-7 w-full bg-[#DDDDDF]">
+                <div class="h-3 w-3 ml-2 rounded-[50%] bg-[#f96256] border-solid border-[1px] border-[#f65549]"></div>
+                <div class="h-3 w-3 rounded-[50%] bg-[#fdbc3d] border-solid border-[1px] border-[#ffb524]"></div>
+                <div class="h-3 w-3 rounded-[50%] bg-[#33c948] border-solid border-[1px] border-[#2dbb41]"></div>
+            </div>
+            <div class="px-8 pt-6 pb-10 bg-[#191919] ">
+                <div class="">
+                    <p>&gt; Kirti.currentLocation</p>
+                    <p class="text-[#e6d889]">"Bengaluru, KA"</p>
+                </div>
+                <div class="mt-6">
+                    <p>&gt; Kirti.contactInfo</p>
+                    <p class="text-[#e6d889]">[ "<a class="text-[#00FFFF] hover:text-[#b6e2e2]"
+                            href="mailto:kirtiraghav456@gmail.com">kirtiraghav456@gmail.com</a>", "<a
+                            class="text-[#00FFFF] hover:text-[#b6e2e2]" target="_blank" href="">LinkedIn</a>", "<a class="text-[#00FFFF] hover:text-[#b6e2e2]"
+                            target="_blank" href="https://github.com/kirtiiraghav">github</a>" ]</p>
+                </div>
+                <div class="mt-6">
+                    <p>&gt; Kirti.resume</p>
+                    <p>" <a class="text-[#00FFFF] hover:text-[#b6e2e2]" target="_blank" href="">resume.pdf</a> "</p>
+                </div>
+                <div class="mt-6">
+                    <p>&gt; Kirti.education</p>
+                    <p class="text-[#e6d889]">" B.Tech - Sai Vidya Institute of Technology, Bengaluru "</p>
+                </div>
+                <div class="mt-6">
+                    <p>&gt; Kirti.skills</p>
+                    <p class="text-[#e6d889]">["HTML", "CSS", "JavaScript", "Tailwind CSS", "ReactJS" ,"Git", "GitHub"]</p>
+                </div>
+                <div class="mt-6 flex items-center gap-2">
+                    <p>&gt; <div class="autotyping h-[18px] w-2 bg-white"></div> </p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
